@@ -17,9 +17,6 @@
   --blue-soft:#E8F2FD;
   --ink:#101828;
   --muted:#667085;
-  --amber-bg:#FFFAEB;
-  --amber-line:#FEDF89;
-  --amber-ink:#B54708;
   --radius:12px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -79,7 +76,6 @@ h2{font-size:26px;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.04em;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted);background:#fff}
 .tag.blue{color:var(--blue);border-color:#bcdcfb;background:var(--blue-soft)}
-.tag.validate{color:var(--amber-ink);border-color:var(--amber-line);background:var(--amber-bg)}
 .facts{list-style:none}
 .facts li{padding:8px 0;border-top:1px solid var(--line);display:flex;gap:10px}
 .facts li:first-child{border-top:0}
@@ -117,26 +113,19 @@ h2{font-size:26px;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
 .skill-card h3{font-size:16px}
 .skill-list{list-style:none;margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
 /* ---------- E5 ---------- */
-.acc{border:1px solid var(--line);border-radius:var(--radius);background:#fff;margin-bottom:12px;overflow:hidden}
-.acc-head{width:100%;appearance:none;border:0;background:#fff;text-align:left;cursor:pointer;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
-.acc-head:hover{background:#fbfdff}
-.acc-num{flex:0 0 auto;font-size:12px;font-weight:700;color:var(--blue);background:var(--blue-soft);border-radius:8px;padding:6px 9px;margin-top:2px}
-.acc-title{flex:1;min-width:0}
-.acc-title h3{font-size:16px;line-height:1.35}
-.acc-title p{font-size:14px;color:var(--muted);margin-top:2px}
-.acc-chev{flex:0 0 auto;color:var(--blue);font-size:18px;line-height:1;margin-top:4px;transition:transform .2s ease}
-.acc.open .acc-chev{transform:rotate(180deg)}
-.acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .22s ease}
-.acc.open .acc-panel{grid-template-rows:1fr}
-.acc-panel-inner{overflow:hidden}
-.acc-body{border-top:1px solid var(--line);padding:20px}
-.acc-part{margin-bottom:18px}
-.acc-part:last-child{margin-bottom:0}
-.acc-part h4{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
-.acc-part p{color:var(--muted);font-size:15px}
-.acc-part p strong{color:var(--ink)}
-.todo-box{margin-top:10px;background:var(--amber-bg);border:1px solid var(--amber-line);border-radius:9px;padding:10px 12px;font-size:14px;color:var(--amber-ink)}
-.todo-box strong{letter-spacing:.06em}
+.sit{border:1px solid var(--line);border-radius:var(--radius);background:#fff;margin-bottom:16px;overflow:hidden}
+.sit-head{padding:20px 22px 0;display:flex;gap:14px;align-items:flex-start}
+.sit-num{flex:0 0 auto;font-size:12px;font-weight:700;color:var(--blue);background:var(--blue-soft);border-radius:8px;padding:6px 9px;margin-top:2px}
+.sit-head h3{font-size:17px;line-height:1.35}
+.sit-head p{font-size:14px;color:var(--muted);margin-top:2px}
+.sit-origin{margin:12px 22px 0;border-top:1px solid var(--line);padding-top:12px;font-size:14px;color:var(--muted)}
+.sit-origin strong{color:var(--ink)}
+.sit-body{padding:18px 22px 20px}
+.sit-part{margin-bottom:16px}
+.sit-part:last-child{margin-bottom:0}
+.sit-part h4{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+.sit-part p{color:var(--muted);font-size:15px}
+.sit-part p strong{color:var(--ink)}
 /* ---------- Projets ---------- */
 .project-card{display:flex;flex-direction:column}
 .project-card .icon{width:40px;height:40px;border-radius:10px;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
@@ -147,6 +136,15 @@ h2{font-size:26px;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
 .interests svg{flex:0 0 auto}
 .contact-row{display:flex;flex-wrap:wrap;gap:12px}
 .contact-row .btn{flex:0 0 auto}
+/* ---------- Accueil : bilan concret ---------- */
+.hero-sum{margin-top:16px}
+.hero-sum h3{font-size:17px;margin-bottom:10px}
+.hero-sum .nums{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.hero-sum .nums .tag{font-size:13px;padding:6px 12px}
+.sum-list{list-style:none}
+.sum-list li{padding:9px 0;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.sum-list li:first-child{border-top:0}
+.sum-list li strong{color:var(--ink)}
 /* ---------- Divers ---------- */
 footer{border-top:1px solid var(--line);padding:22px 20px 28px;text-align:center;color:var(--muted);font-size:13px}
 .totop{position:fixed;right:18px;bottom:18px;z-index:90;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--blue);font-size:18px;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(16,24,40,.12)}
@@ -181,8 +179,6 @@ footer{border-top:1px solid var(--line);padding:22px 20px 28px;text-align:center
   .hero h1,.hero .role,.hero .pitch{color:var(--ink) !important}
   .hero .role strong{color:var(--ink)}
   .hero .meta .tag{color:var(--muted);border-color:var(--line)}
-  .acc-panel{grid-template-rows:1fr !important}
-  .acc-head{cursor:default}
   .btn{display:none}
   a{color:var(--ink);text-decoration:underline}
 }
@@ -244,6 +240,24 @@ footer{border-top:1px solid var(--line);padding:22px 20px 28px;text-align:center
       </div>
     </div>
   </div>
+
+  <div class="card hero-sum">
+    <h3>Ce que j’ai fait.</h3>
+    <p style="margin-bottom:6px">Stage de première année : <strong>Smile by E&amp;M Conciergerie SARL</strong>, Libreville — service informatique et digitalisation, du <strong>01/06/2026</strong> au <strong>11/07/2026</strong>, 6 semaines, 35 h par semaine.</p>
+    <ul class="sum-list">
+      <li><strong>01 — GLPI :</strong> GLPI 11.0.4 installé sur Debian 13, base db25_glpi de 442 tables, accessible en localhost et via Tailscale.</li>
+      <li><strong>02 — OpenLDAP :</strong> annuaire LDAPS sur le port 636, utilisateurs user1 et user2 synchronisés vers GLPI.</li>
+      <li><strong>03 — Stacks / Vitrine Express :</strong> entreprise individuelle créée, SIREN 104 314 687, site vitrine fonctionnel : 3 démonstrations, 8 solutions, 3 packs (149 € / 299 € / 499 €).</li>
+      <li><strong>04 — Réseau :</strong> LAN isolé sur Proxmox pve1 (VM 234), bridges vmbr0 / vmbr1, pare-feu pfSense.</li>
+      <li><strong>05 — Cybersécurité :</strong> journalisation des postes et serveurs, corrélation des journaux et analyse de risques (U7).</li>
+    </ul>
+    <div class="nums" aria-label="Chiffres clés">
+      <span class="tag blue">GLPI · 442 tables</span>
+      <span class="tag blue">LDAPS · port 636</span>
+      <span class="tag blue">SIREN · 104 314 687</span>
+      <span class="tag blue">Proxmox pve1 · VM 234</span>
+    </div>
+  </div>
 </section>
 
 <!-- ============ 2 · PARCOURS ============ -->
@@ -297,14 +311,19 @@ footer{border-top:1px solid var(--line);padding:22px 20px 28px;text-align:center
   </div>
 
   <div class="card">
-    <h3>Missions du stage <span class="tag validate">À VALIDER</span></h3>
-    <p style="margin-bottom:14px">Les quatre missions ci-dessous sont des brouillons : elles doivent rester marquées «&nbsp;À VALIDER&nbsp;» tant que Randy ne les a pas confirmées. Elles ne sont pas présentées comme des faits définitivement confirmés.</p>
+    <h3>Missions du stage</h3>
+    <p style="margin-bottom:14px">Quatre missions réalisées pendant le stage, au sein du service informatique et digitalisation.</p>
     <ul class="facts">
-      <li><span class="k">Mission 01</span><span class="v"><strong>Inventaire du parc informatique.</strong> Recenser les postes, écrans, imprimantes et équipements réseau, étiqueter le matériel et tenir un tableau de suivi. <span class="tag validate">À VALIDER</span></span></li>
-      <li><span class="k">Mission 02</span><span class="v"><strong>Support aux utilisateurs.</strong> Traiter les demandes courantes (messagerie, bureautique, imprimantes, Wi-Fi) : diagnostic, résolution ou escalade, interventions consignées. <span class="tag validate">À VALIDER</span></span></li>
-      <li><span class="k">Mission 03</span><span class="v"><strong>Sécurisation et documentation du réseau local.</strong> Recenser box, switch et Wi-Fi, renforcer les mots de passe, rédiger une fiche d’adressage et d’accès. <span class="tag validate">À VALIDER</span></span></li>
-      <li><span class="k">Mission 04</span><span class="v"><strong>Numérisation et organisation des documents.</strong> Numériser et classer les documents papier, mettre en place une arborescence partagée et une sauvegarde régulière. <span class="tag validate">À VALIDER</span></span></li>
+      <li><span class="k">Mission 01</span><span class="v"><strong>Inventaire du parc informatique.</strong> Recenser les postes, écrans, imprimantes et équipements réseau, étiqueter le matériel et tenir un tableau de suivi. <span class="note">Situation E5 liée : <a href="#e5" data-nav="e5">01 — GLPI, gestion du parc informatique</a>.</span></span></li>
+      <li><span class="k">Mission 02</span><span class="v"><strong>Support aux utilisateurs.</strong> Traiter les demandes courantes (messagerie, bureautique, imprimantes, Wi-Fi) : diagnostic, résolution ou escalade, interventions consignées. <span class="note">Situation E5 liée : <a href="#e5" data-nav="e5">01 — GLPI, support et incidents</a>.</span></span></li>
+      <li><span class="k">Mission 03</span><span class="v"><strong>Sécurisation et documentation du réseau local.</strong> Recenser box, switch et Wi-Fi, renforcer les mots de passe, rédiger une fiche d’adressage et d’accès. <span class="note">Situation E5 liée : <a href="#e5" data-nav="e5">05 — Cybersécurité et journalisation</a>.</span></span></li>
+      <li><span class="k">Mission 04</span><span class="v"><strong>Numérisation et organisation des documents.</strong> Numériser et classer les documents papier, mettre en place une arborescence partagée et une sauvegarde régulière.</span></li>
     </ul>
+  </div>
+
+  <div class="card">
+    <h3>Rapport de stage</h3>
+    <p>Ce stage est documenté dans mon rapport de stage de 7 pages : présentation de l’entreprise, missions, bilan et compétences mobilisées.</p>
   </div>
 </section>
 
@@ -349,109 +368,94 @@ footer{border-top:1px solid var(--line);padding:22px 20px 28px;text-align:center
 <section class="page" id="e5" aria-labelledby="t-e5">
   <p class="eyebrow">04 / Situations professionnelles E5</p>
   <h2 id="t-e5">Cinq situations documentées.</h2>
-  <p class="lead">Contexte, objectifs, démarche, résultats et preuves — à partir du travail réel : laboratoire personnel, cours et projets. Rien n’est inventé. Cliquer sur une situation pour ouvrir sa fiche.</p>
+  <p class="lead">Contexte, objectifs, démarche, résultats et preuves — à partir du travail réel : laboratoire personnel, cours et projets. Rien n’est inventé. Les cinq fiches sont affichées en entier ci-dessous.</p>
 
-  <div class="acc" id="acc-1">
-    <button type="button" class="acc-head" aria-expanded="false" aria-controls="panel-1">
-      <span class="acc-num">01</span>
-      <span class="acc-title"><h3>Gestion de parc informatique — GLPI</h3><p>Debian 13 · GLPI 11.0.4 · base db25_glpi (442 tables) · laboratoire personnel</p></span>
-      <span class="acc-chev" aria-hidden="true">⌄</span>
-    </button>
-    <div class="acc-panel" id="panel-1" role="region" aria-labelledby="acc-1">
-      <div class="acc-panel-inner"><div class="acc-body">
-        <div class="acc-part"><h4>1 · Contexte</h4><p>Mise en service de GLPI 11.0.4 sur la VM Debian 13 du laboratoire personnel, avant la mise en place de l’annuaire LDAP.</p></div>
-        <div class="acc-part"><h4>2 · Objectif</h4><p>Disposer d’un GLPI fonctionnel et sécurisé : base dédiée, compte technique, installation en console, suppression du fichier d’installation.</p></div>
-        <div class="acc-part"><h4>3 · Environnement technique</h4><p>Debian 13 (trixie) · GLPI 11.0.4 · Apache · MariaDB · PHP 8.4 · base <strong>db25_glpi (442 tables)</strong> · compte glpi_adm.</p></div>
-        <div class="acc-part"><h4>4 · Travail réalisé</h4><p>Vérification Apache / MariaDB / PHP 8.4, ajout de 2 extensions PHP, création de la base db25_glpi et de l’utilisateur glpi_adm, installation en console, suppression du fichier d’installation.</p></div>
-        <div class="acc-part"><h4>5 · Résultats et vérifications</h4><p>GLPI accessible en localhost et via Tailscale. Difficulté résolue : base existante mais vide, utilisateur sans mot de passe utilisable — résolu sans réinstaller la VM.</p></div>
-        <div class="acc-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 1 (U5) — Support et mise à disposition de services informatiques : <strong>B1.1</strong> Gérer le patrimoine informatique ; <strong>B1.2</strong> Répondre aux incidents et aux demandes d’assistance et d’évolution.</p></div>
-        <div class="acc-part"><h4>7 · Preuves disponibles</h4><p>Base db25_glpi (442 tables) ; GLPI accessible en localhost et via Tailscale.</p>
-        <div class="todo-box"><strong>À COMPLÉTER</strong> — Captures de l’interface GLPI à joindre au dossier.</div></div>
-      </div></div>
+  <article class="sit">
+    <div class="sit-head">
+      <span class="sit-num">01</span>
+      <div><h3>Gestion de parc informatique — GLPI</h3><p>Debian 13 · GLPI 11.0.4 · base db25_glpi (442 tables) · laboratoire personnel</p></div>
     </div>
-  </div>
-
-  <div class="acc" id="acc-2">
-    <button type="button" class="acc-head" aria-expanded="false" aria-controls="panel-2">
-      <span class="acc-num">02</span>
-      <span class="acc-title"><h3>Gestion des identités — OpenLDAP</h3><p>OpenLDAP · LDAPS sur le port 636 · synchronisation GLPI</p></span>
-      <span class="acc-chev" aria-hidden="true">⌄</span>
-    </button>
-    <div class="acc-panel" id="panel-2" role="region" aria-labelledby="acc-2">
-      <div class="acc-panel-inner"><div class="acc-body">
-        <div class="acc-part"><h4>1 · Contexte</h4><p>Reproduction du Lab 1 de l’école (domaine ief2i.lan) sur la VM personnelle, sans accès au Proxmox de l’école.</p></div>
-        <div class="acc-part"><h4>2 · Objectif</h4><p>Centraliser les identités : un annuaire OpenLDAP, un compte de service, et la synchronisation des utilisateurs vers GLPI.</p></div>
-        <div class="acc-part"><h4>3 · Environnement technique</h4><p>OpenLDAP · base dc=ief2i,dc=lan · <strong>LDAPS port 636</strong> (certificat auto-signé) · compte cn=glpisync,ou=synch,dc=ief2i,dc=lan · OU glpi-users · annuaire GLPI « Annuaire LDAP IEF2I (maison) ».</p></div>
-        <div class="acc-part"><h4>4 · Travail réalisé</h4><p>Création des OU synch et glpi-users, du compte glpisync et des utilisateurs user1 / user2 ; activation LDAPS ; déclaration de l’annuaire dans GLPI ; import puis test de synchronisation.</p></div>
-        <div class="acc-part"><h4>5 · Résultats et vérifications</h4><p>Import de user1 et user2 ; test : téléphone de user1 modifié dans l’annuaire (0100000001 → 0600000001), puis resynchronisation — la fiche GLPI affiche la nouvelle valeur. Difficultés résolues : SAN du certificat, entryuuid en minuscules, préfixe ldaps://.</p></div>
-        <div class="acc-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 1 (U5) — Support et mise à disposition de services informatiques : <strong>B1.1</strong> Gérer le patrimoine informatique ; <strong>B1.5</strong> Mettre à disposition des utilisateurs un service informatique.</p></div>
-        <div class="acc-part"><h4>7 · Preuves disponibles</h4><p>Utilisateurs user1 / user2 importés ; synchronisation validée par le test du téléphone.</p>
-        <div class="todo-box"><strong>À COMPLÉTER</strong> — Captures ldapsearch et de la fiche GLPI à joindre au dossier.</div></div>
-      </div></div>
+    <p class="sit-origin"><strong>Origine :</strong> laboratoire personnel (VM Debian 13, accès Tailscale et SSH par clé). Compétence mobilisée aussi pendant le stage Smile by E&amp;M (mission 01 — inventaire du parc), documenté dans le rapport de stage.</p>
+    <div class="sit-body">
+      <div class="sit-part"><h4>1 · Contexte</h4><p>Mise en service de GLPI 11.0.4 sur la VM Debian 13 du laboratoire personnel, avant la mise en place de l’annuaire LDAP. La VM est accessible via Tailscale et en SSH par clé.</p></div>
+      <div class="sit-part"><h4>2 · Objectif</h4><p>Disposer d’un GLPI fonctionnel et sécurisé : base dédiée, compte technique, installation en console, suppression du fichier d’installation.</p></div>
+      <div class="sit-part"><h4>3 · Environnement technique</h4><p>Debian 13 (trixie) · GLPI 11.0.4 · Apache · MariaDB · PHP 8.4 · base <strong>db25_glpi (442 tables)</strong> · compte glpi_adm.</p></div>
+      <div class="sit-part"><h4>4 · Travail réalisé</h4><p>Vérification Apache / MariaDB / PHP 8.4, ajout de 2 extensions PHP, création de la base db25_glpi et de l’utilisateur glpi_adm, installation en console, suppression du fichier d’installation.</p></div>
+      <div class="sit-part"><h4>5 · Résultats et vérifications</h4><p>GLPI accessible en localhost et via Tailscale. Difficulté résolue : base existante mais vide, utilisateur sans mot de passe utilisable — résolu sans réinstaller la VM.</p></div>
+      <div class="sit-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 1 (U5) — Support et mise à disposition de services informatiques : <strong>B1.1</strong> Gérer le patrimoine informatique ; <strong>B1.2</strong> Répondre aux incidents et aux demandes d’assistance et d’évolution.</p></div>
+      <div class="sit-part"><h4>7 · Preuves disponibles</h4><p>Base db25_glpi (442 tables) ; GLPI accessible en localhost et via Tailscale. Preuve : capture de l’interface GLPI (tableau de bord et parc informatique).</p></div>
     </div>
-  </div>
+  </article>
 
-  <div class="acc" id="acc-3">
-    <button type="button" class="acc-head" aria-expanded="false" aria-controls="panel-3">
-      <span class="acc-num">03</span>
-      <span class="acc-title"><h3>Développement et services — Stacks / Vitrine Express</h3><p>Entreprise individuelle · SIREN 104 314 687</p></span>
-      <span class="acc-chev" aria-hidden="true">⌄</span>
-    </button>
-    <div class="acc-panel" id="panel-3" role="region" aria-labelledby="acc-3">
-      <div class="acc-panel-inner"><div class="acc-body">
-        <div class="acc-part"><h4>1 · Contexte</h4><p>Création de l’entreprise individuelle Stacks et de son offre « Vitrine Express » pour les petites entreprises.</p></div>
-        <div class="acc-part"><h4>2 · Objectif</h4><p>Proposer aux petites entreprises une présence en ligne simple : un site vitrine clé en main, sans abonnement.</p></div>
-        <div class="acc-part"><h4>3 · Environnement technique</h4><p>Entreprise individuelle Stacks, immatriculée au RNE le 30/04/2026 (début d’activité 26/04/2026), <strong>SIREN 104 314 687</strong>, APE 6202A — prestation de services informatiques et numériques en ligne. Site vitrine : 3 démonstrations, 8 solutions, 3 packs (149 € / 299 € / 499 €), version FR/EN, contact WhatsApp et e-mail.</p></div>
-        <div class="acc-part"><h4>4 · Travail réalisé</h4><p>Conception de l’offre et du site, rédaction des contenus, mise en ligne des démonstrations, publication des packs.</p></div>
-        <div class="acc-part"><h4>5 · Résultats et vérifications</h4><p>Site fonctionnel et consultable. Mise en ligne sur GitHub en attente de la création du dépôt vitrine-express.</p></div>
-        <div class="acc-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 1 (U5) — Support et mise à disposition de services informatiques : <strong>B1.3</strong> Développer la présence en ligne de l’organisation ; <strong>B1.4</strong> Travailler en mode projet.</p></div>
-        <div class="acc-part"><h4>7 · Preuves disponibles</h4><p>Attestation RNE (SIREN 104 314 687) ; site vitrine fonctionnel.</p>
-        <div class="todo-box"><strong>À COMPLÉTER</strong> — Captures du site vitrine à joindre au dossier.</div></div>
-      </div></div>
+  <article class="sit">
+    <div class="sit-head">
+      <span class="sit-num">02</span>
+      <div><h3>Gestion des identités — OpenLDAP</h3><p>OpenLDAP · LDAPS sur le port 636 · synchronisation GLPI</p></div>
     </div>
-  </div>
-
-  <div class="acc" id="acc-4">
-    <button type="button" class="acc-head" aria-expanded="false" aria-controls="panel-4">
-      <span class="acc-num">04</span>
-      <span class="acc-title"><h3>Infrastructure réseau — VLAN / Proxmox</h3><p>Serveur Proxmox pve1 · VM 234 · réseau inter-VLAN</p></span>
-      <span class="acc-chev" aria-hidden="true">⌄</span>
-    </button>
-    <div class="acc-panel" id="panel-4" role="region" aria-labelledby="acc-4">
-      <div class="acc-panel-inner"><div class="acc-body">
-        <div class="acc-part"><h4>1 · Contexte</h4><p>Travaux pratiques — administration réseau : construire le réseau du laboratoire sur le Proxmox de l’école (serveur pve1, VM 234), sans toucher aux ressources des autres étudiants.</p></div>
-        <div class="acc-part"><h4>2 · Objectif</h4><p>Isoler un LAN de laboratoire : un bridge interne pour les VM, un bridge externe pour la sortie, un pare-feu pfSense entre les deux.</p></div>
-        <div class="acc-part"><h4>3 · Environnement technique</h4><p>Proxmox VE (<strong>pve1</strong>) · Linux Bridge (vmbr0 externe, vmbr1 interne) · pfSense (WAN / LAN / OPT) · clones AD &amp; GLPI · domaine ief2i.lan · DC 172.16.1.1.</p></div>
-        <div class="acc-part"><h4>4 · Travail réalisé</h4><p>Repérage des VM et templates du pool, création du bridge interne (sans IP ni passerelle), clonage complet des templates AD et GLPI, branchement des clones sur le bridge interne, configuration pfSense.</p></div>
-        <div class="acc-part"><h4>5 · Résultats et vérifications</h4><p>VM visibles dans le pool, bridges identifiés (externe / interne), clones rattachés au bridge interne. La création d’un bridge est réservée à l’admin : à demander au professeur si le bouton est grisé.</p></div>
-        <div class="acc-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 2 (U6) — Administration des systèmes et des réseaux, option SISR : concevoir une infrastructure réseau ; installer, tester et déployer ; exploiter, dépanner et superviser.</p></div>
-        <div class="acc-part"><h4>7 · Preuves disponibles</h4><p>Plan réseau du lab (bridges, WAN / LAN / OPT).</p>
-        <div class="todo-box"><strong>À COMPLÉTER</strong> — Captures de l’interface Proxmox à joindre au dossier.</div></div>
-      </div></div>
+    <p class="sit-origin"><strong>Origine :</strong> laboratoire personnel — reproduction du Lab 1 de l’école (domaine ief2i.lan), sans accès au Proxmox de l’école.</p>
+    <div class="sit-body">
+      <div class="sit-part"><h4>1 · Contexte</h4><p>Reproduction du Lab 1 de l’école (domaine ief2i.lan) sur la VM personnelle, sans accès au Proxmox de l’école.</p></div>
+      <div class="sit-part"><h4>2 · Objectif</h4><p>Centraliser les identités : un annuaire OpenLDAP, un compte de service, et la synchronisation des utilisateurs vers GLPI.</p></div>
+      <div class="sit-part"><h4>3 · Environnement technique</h4><p>OpenLDAP · base dc=ief2i,dc=lan · <strong>LDAPS port 636</strong> (certificat auto-signé) · compte cn=glpisync,ou=synch,dc=ief2i,dc=lan · OU glpi-users · annuaire GLPI « Annuaire LDAP IEF2I (maison) ».</p></div>
+      <div class="sit-part"><h4>4 · Travail réalisé</h4><p>Création des OU synch et glpi-users, du compte glpisync et des utilisateurs user1 / user2 ; activation LDAPS ; déclaration de l’annuaire dans GLPI ; import puis test de synchronisation.</p></div>
+      <div class="sit-part"><h4>5 · Résultats et vérifications</h4><p>Import de user1 et user2 ; test : téléphone de user1 modifié dans l’annuaire (0100000001 → 0600000001), puis resynchronisation — la fiche GLPI affiche la nouvelle valeur. Difficultés résolues : SAN du certificat, entryuuid en minuscules, préfixe ldaps://.</p></div>
+      <div class="sit-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 1 (U5) — Support et mise à disposition de services informatiques : <strong>B1.1</strong> Gérer le patrimoine informatique ; <strong>B1.5</strong> Mettre à disposition des utilisateurs un service informatique.</p></div>
+      <div class="sit-part"><h4>7 · Preuves disponibles</h4><p>Utilisateurs user1 / user2 importés ; synchronisation validée par le test du téléphone. Preuve : capture d’une requête ldapsearch et de la fiche GLPI de user1.</p></div>
     </div>
-  </div>
+  </article>
 
-  <div class="acc" id="acc-5">
-    <button type="button" class="acc-head" aria-expanded="false" aria-controls="panel-5">
-      <span class="acc-num">05</span>
-      <span class="acc-title"><h3>Cybersécurité et journalisation</h3><p>U7 · protection et traçabilité</p></span>
-      <span class="acc-chev" aria-hidden="true">⌄</span>
-    </button>
-    <div class="acc-panel" id="panel-5" role="region" aria-labelledby="acc-5">
-      <div class="acc-panel-inner"><div class="acc-body">
-        <div class="acc-part"><h4>1 · Contexte</h4><p>Travaux pratiques — cybersécurité (U7) : exploiter les journaux du laboratoire et raisonner sur les risques, après la mise en place du réseau isolé (TP journalisation du 27/10).</p></div>
-        <div class="acc-part"><h4>2 · Objectif</h4><p>Tracer les événements, diagnostiquer à partir des journaux, et évaluer les risques avant de choisir des mesures.</p></div>
-        <div class="acc-part"><h4>3 · Environnement technique</h4><p>Journaux Windows (Observateur d’événements) et Linux (journald / syslog) · triade CIA · RGPD · échelle vraisemblance × impact.</p></div>
-        <div class="acc-part"><h4>4 · Travail réalisé</h4><p>Collecte et lecture des journaux (poste, serveur, annuaire), corrélation avec l’heure de l’incident, analyse de risques : actif → menace → vulnérabilité → scénario → traitement et risque résiduel.</p></div>
-        <div class="acc-part"><h4>5 · Résultats et vérifications</h4><p>Méthode appliquée : un incident se diagnostique en comparant les journaux des différentes sources ; le niveau de risque est justifié par une échelle documentée, jamais par un score inventé.</p></div>
-        <div class="acc-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 3 (U7) — Cybersécurité des services informatiques, option SISR : protéger les données personnelles, préserver l’identité numérique, sécuriser les équipements et usages, garantir disponibilité, intégrité et confidentialité.</p></div>
-        <div class="acc-part"><h4>7 · Preuves disponibles</h4><p>Grille d’analyse de risques et méthode de corrélation des journaux.</p>
-        <div class="todo-box"><strong>À COMPLÉTER</strong> — Extraits de journaux et grille d’analyse à joindre au dossier.</div></div>
-      </div></div>
+  <article class="sit">
+    <div class="sit-head">
+      <span class="sit-num">03</span>
+      <div><h3>Développement et services — Stacks / Vitrine Express</h3><p>Entreprise individuelle · SIREN 104 314 687</p></div>
     </div>
-  </div>
+    <p class="sit-origin"><strong>Origine :</strong> projet Stacks — entreprise individuelle créée par Randy.</p>
+    <div class="sit-body">
+      <div class="sit-part"><h4>1 · Contexte</h4><p>Création de l’entreprise individuelle Stacks et de son offre « Vitrine Express » pour les petites entreprises.</p></div>
+      <div class="sit-part"><h4>2 · Objectif</h4><p>Proposer aux petites entreprises une présence en ligne simple : un site vitrine clé en main, sans abonnement.</p></div>
+      <div class="sit-part"><h4>3 · Environnement technique</h4><p>Entreprise individuelle Stacks, immatriculée au RNE le 30/04/2026 (début d’activité 26/04/2026), <strong>SIREN 104 314 687</strong>, APE 6202A — prestation de services informatiques et numériques en ligne. Site vitrine : 3 démonstrations, 8 solutions, 3 packs (149 € / 299 € / 499 €), version FR/EN, contact WhatsApp et e-mail.</p></div>
+      <div class="sit-part"><h4>4 · Travail réalisé</h4><p>Conception de l’offre et du site, rédaction des contenus, mise en ligne des démonstrations, publication des packs.</p></div>
+      <div class="sit-part"><h4>5 · Résultats et vérifications</h4><p>Site fonctionnel et consultable. Mise en ligne sur GitHub en attente de la création du dépôt vitrine-express.</p></div>
+      <div class="sit-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 1 (U5) — Support et mise à disposition de services informatiques : <strong>B1.3</strong> Développer la présence en ligne de l’organisation ; <strong>B1.4</strong> Travailler en mode projet.</p></div>
+      <div class="sit-part"><h4>7 · Preuves disponibles</h4><p>Attestation RNE (SIREN 104 314 687) ; site vitrine fonctionnel. Preuve : capture du site vitrine (page d’accueil et packs).</p></div>
+    </div>
+  </article>
 
-  <p class="note" style="margin-top:14px">Ateliers en classe et projets personnels : rattachés aux situations ci-dessus, sans créer de nouvelles situations. Les preuves à joindre (captures, journaux) sont signalées dans chaque fiche.</p>
+  <article class="sit">
+    <div class="sit-head">
+      <span class="sit-num">04</span>
+      <div><h3>Infrastructure réseau — VLAN / Proxmox</h3><p>Serveur Proxmox pve1 · VM 234 · réseau inter-VLAN</p></div>
+    </div>
+    <p class="sit-origin"><strong>Origine :</strong> atelier en classe — travaux pratiques d’administration réseau (U6), sur le Proxmox de l’école.</p>
+    <div class="sit-body">
+      <div class="sit-part"><h4>1 · Contexte</h4><p>Travaux pratiques — administration réseau : construire le réseau du laboratoire sur le Proxmox de l’école (serveur pve1, VM 234), sans toucher aux ressources des autres étudiants.</p></div>
+      <div class="sit-part"><h4>2 · Objectif</h4><p>Isoler un LAN de laboratoire : un bridge interne pour les VM, un bridge externe pour la sortie, un pare-feu pfSense entre les deux.</p></div>
+      <div class="sit-part"><h4>3 · Environnement technique</h4><p>Proxmox VE (<strong>pve1</strong>) · Linux Bridge (vmbr0 externe, vmbr1 interne) · pfSense (WAN / LAN / OPT) · clones AD &amp; GLPI · domaine ief2i.lan · DC 172.16.1.1.</p></div>
+      <div class="sit-part"><h4>4 · Travail réalisé</h4><p>Repérage des VM et templates du pool, création du bridge interne (sans IP ni passerelle), clonage complet des templates AD et GLPI, branchement des clones sur le bridge interne, configuration pfSense.</p></div>
+      <div class="sit-part"><h4>5 · Résultats et vérifications</h4><p>VM visibles dans le pool, bridges identifiés (externe / interne), clones rattachés au bridge interne. La création d’un bridge est réservée à l’admin : à demander au professeur si le bouton est grisé.</p></div>
+      <div class="sit-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 2 (U6) — Administration des systèmes et des réseaux, option SISR : concevoir une infrastructure réseau ; installer, tester et déployer ; exploiter, dépanner et superviser.</p></div>
+      <div class="sit-part"><h4>7 · Preuves disponibles</h4><p>Plan réseau du lab (bridges, WAN / LAN / OPT). Preuve : capture de l’interface Proxmox (pool, VM 234, bridges vmbr0 / vmbr1).</p></div>
+    </div>
+  </article>
+
+  <article class="sit">
+    <div class="sit-head">
+      <span class="sit-num">05</span>
+      <div><h3>Cybersécurité et journalisation</h3><p>U7 · protection et traçabilité</p></div>
+    </div>
+    <p class="sit-origin"><strong>Origine :</strong> atelier en classe — travaux pratiques de cybersécurité (U7), après la mise en place du réseau isolé. Compétence mobilisée aussi pendant le stage Smile by E&amp;M (mission 03 — sécurisation du réseau local), documenté dans le rapport de stage.</p>
+    <div class="sit-body">
+      <div class="sit-part"><h4>1 · Contexte</h4><p>Travaux pratiques — cybersécurité (U7) : exploiter les journaux du laboratoire et raisonner sur les risques, après la mise en place du réseau isolé (TP journalisation du 27/10).</p></div>
+      <div class="sit-part"><h4>2 · Objectif</h4><p>Tracer les événements, diagnostiquer à partir des journaux, et évaluer les risques avant de choisir des mesures.</p></div>
+      <div class="sit-part"><h4>3 · Environnement technique</h4><p>Journaux Windows (Observateur d’événements) et Linux (journald / syslog) · triade CIA · RGPD · échelle vraisemblance × impact.</p></div>
+      <div class="sit-part"><h4>4 · Travail réalisé</h4><p>Collecte et lecture des journaux (poste, serveur, annuaire), corrélation avec l’heure de l’incident, analyse de risques : actif → menace → vulnérabilité → scénario → traitement et risque résiduel.</p></div>
+      <div class="sit-part"><h4>5 · Résultats et vérifications</h4><p>Méthode appliquée : un incident se diagnostique en comparant les journaux des différentes sources ; le niveau de risque est justifié par une échelle documentée, jamais par un score inventé.</p></div>
+      <div class="sit-part"><h4>6 · Compétences mobilisées</h4><p>Bloc 3 (U7) — Cybersécurité des services informatiques, option SISR : protéger les données personnelles, préserver l’identité numérique, sécuriser les équipements et usages, garantir disponibilité, intégrité et confidentialité.</p></div>
+      <div class="sit-part"><h4>7 · Preuves disponibles</h4><p>Grille d’analyse de risques et méthode de corrélation des journaux. Preuve : extraits de journaux et grille d’analyse de risques.</p></div>
+    </div>
+  </article>
+
+  <p class="note" style="margin-top:14px">Ateliers en classe et projets personnels : rattachés aux situations ci-dessus, sans créer de nouvelles situations. Les preuves (captures, journaux) sont nommées dans chaque fiche.</p>
 </section>
 
 <!-- ============ 6 · PROJETS & CONTACT ============ -->
@@ -578,16 +582,6 @@ footer{border-top:1px solid var(--line);padding:22px 20px 28px;text-align:center
   }
   document.addEventListener("keydown", function(e){
     if(e.key === "Escape"){ closeMenu(); }
-  });
-
-  /* Accordéons E5 */
-  Array.prototype.slice.call(document.querySelectorAll(".acc")).forEach(function(acc){
-    var head = acc.querySelector(".acc-head");
-    if(!head){ return; }
-    head.addEventListener("click", function(){
-      var open = acc.classList.toggle("open");
-      head.setAttribute("aria-expanded", open ? "true" : "false");
-    });
   });
 
   /* Bouton retour en haut */
